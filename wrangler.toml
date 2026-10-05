@@ -1,0 +1,7 @@
+name = "tanstack-start-ts"
+main = "@tanstack/react-start/server-entry"
+compatibility_date = "2026-10-01"
+
+[vars]
+SUPABASE_URL = "https://ilidigxbjyrplwgmndzs.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "sb_publishable_7IQW8qGos_seTq2KWq_NdA_nXnUmDqg"
