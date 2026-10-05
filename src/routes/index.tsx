@@ -4,11 +4,12 @@ import { getGameInfo } from "@/lib/game-info.functions";
 import { getDevs } from "@/lib/community.functions";
 import { DevsSection, ApplySection } from "@/components/CommunitySections";
 
-const devsQuery = queryOptions({ queryKey: ["devs"], queryFn: () => getDevs() });
+const devsQuery = queryOptions({ queryKey: ["devs"], queryFn: () => getDevs(), refetchInterval: 60_000 });
 
 const gameInfoQuery = queryOptions({
   queryKey: ["game-info"],
   queryFn: () => getGameInfo(),
+  refetchInterval: 30_000,
 });
 
 export const Route = createFileRoute("/")({
